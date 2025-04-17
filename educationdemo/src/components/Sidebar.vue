@@ -97,12 +97,17 @@ export default {
 
 <style lang="scss" scoped>
 .sidebar {
-  height: 100%;
+  height: auto;
   background-color: #f5f7fa;
   transition: width 0.3s ease;
-  overflow: hidden;
+  overflow: scroll;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-
+  .parent::-webkit-scrollbar {
+    width: 0;
+  }
+  .parent {
+    scrollbar-width: none;
+  }
   &.collapsed {
     .logo-container {
       padding: 16px 14px;

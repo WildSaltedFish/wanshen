@@ -487,49 +487,50 @@ const router = createRouter({
     //     }
     //   ]
     // },
-    {
-      path: "/about",
-      name: "about",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("../views/AboutView.vue"),
-    },
-    {
-      path: "/test",
-      name: "test",
-      component: () => import("../components/markdown/index.vue"),
-    },
-    {
-      path: "/file",
-      name: "file",
-      component: () => import("../views/file/List.vue"),
-    },
-    {
-      path: "/file/:id",
-      name: "fileDetail",
-      component: () => import("../views/file/Detail.vue"),
-    },
-    {
-      path: "/welcome",
-      name: "welcome",
-      component: () => import("../views/welcome/WelcomeScreen.vue"),
-    },
-    {
-      path: "/mainpage",
-      name: "mainpage",
-      component: () => import("../views/mainpage/mainpage.vue"),
-    },
-    {
-      path: "/report",
-      name: "report",
-      component: Report,
-    },
-    {
-      path: "/report/:id",
-      name: "reportDetail",
-      component: () => import("../views/report/Detail.vue"),
-    },
+
+    // {
+    //   path: "/about",
+    //   name: "about",
+    //   // route level code-splitting
+    //   // this generates a separate chunk (About.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import("../views/AboutView.vue"),
+    // },
+    // {
+    //   path: "/test",
+    //   name: "test",
+    //   component: () => import("../components/markdown/index.vue"),
+    // },
+    // {
+    //   path: "/file",
+    //   name: "file",
+    //   component: () => import("../views/file/List.vue"),
+    // },
+    // {
+    //   path: "/file/:id",
+    //   name: "fileDetail",
+    //   component: () => import("../views/file/Detail.vue"),
+    // },
+    // {
+    //   path: "/welcome",
+    //   name: "welcome",
+    //   component: () => import("../views/welcome/WelcomeScreen.vue"),
+    // },
+    // {
+    //   path: "/mainpage",
+    //   name: "mainpage",
+    //   component: () => import("../views/mainpage/mainpage.vue"),
+    // },
+    // {
+    //   path: "/report",
+    //   name: "report",
+    //   component: Report,
+    // },
+    // {
+    //   path: "/report/:id",
+    //   name: "reportDetail",
+    //   component: () => import("../views/report/Detail.vue"),
+    // },
   ],
 });
 
