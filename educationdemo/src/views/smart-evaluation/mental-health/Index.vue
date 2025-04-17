@@ -129,7 +129,6 @@ import {
   Histogram
 } from '@element-plus/icons-vue'
 
-import bar from '../../../components/charts/barChart.vue';
 
 const primary = '#4566d1'
 const secondary = 'rgb(69, 183, 209)'

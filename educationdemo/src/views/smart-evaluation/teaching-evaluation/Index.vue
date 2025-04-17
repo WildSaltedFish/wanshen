@@ -110,7 +110,7 @@
 <script setup>
 import { ref } from 'vue'
 import { Refresh, Opportunity } from '@element-plus/icons-vue'
-import RadarChart from '../../../components/charts/radarChart.vue';
+import RadarChart from '@/components/charts/radarChart.vue';
 
 const variables = {
   primary: '#4566d1',
