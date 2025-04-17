@@ -98,7 +98,7 @@ const stats = ref([
   --primary: #4566d1;
   --secondary: #45B7D1;
   --glass-bg: rgba(255, 255, 255, 0.85);
-  min-height: 100vh;
+  min-height: 100%;
   background: linear-gradient(150deg, #f8fbfe 0%, #f2f7ff 100%);
   padding: 2rem;
 

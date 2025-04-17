@@ -72,7 +72,7 @@ const router = createRouter({
         icon: UserFilled
       },
       component: () => import("../views/mainpage/mainpage.vue"),
-    }, 
+    },
     {
       path: "/report",
       name: "report",
@@ -239,15 +239,6 @@ const router = createRouter({
           }
         },
         {
-          path: "/smart-education/smart-homework",
-          name: "smartHomework",
-          component: () => import("../views/smart-education/smart-homework/Index.vue"),
-          meta: {
-            title: '智能题库与作业设计',
-            icon: Document
-          }
-        },
-        {
           path: "/smart-education/research-platform",
           name: "researchPlatform",
           component: () => import("../views/smart-education/research-platform/Index.vue"),
@@ -264,7 +255,16 @@ const router = createRouter({
             title: '智能化教学资源生成',
             icon: Platform
           }
-        }
+        },
+        {
+          path: "/smart-education/smart-homeworkNew",
+          name: "smartHomeworkNew",
+          component: () => import("@/views/smart-education/smart-homeworkNew/Index.vue"),
+          meta: {
+            title: '智能题库与作业设计',
+            icon: Document
+          }
+        },
       ]
     },
     {
@@ -287,6 +287,15 @@ const router = createRouter({
           }
         },
         {
+          path: "/ai-teaching/ai-live",
+          name: "aiLive",
+          component: () => import("../views/ai-teaching/ai-live/Index.vue"),
+          meta: {
+            title: 'AI直播',
+            icon: VideoPlay
+          }
+        },
+        {
           path: "/ai-teaching/classroom-analysis",
           name: "classroomAnalysis",
           component: () => import("../views/ai-teaching/classroom-analysis/Index.vue"),
@@ -302,15 +311,6 @@ const router = createRouter({
           meta: {
             title: '智慧黑板',
             icon: DataAnalysis
-          }
-        },
-        {
-          path: "/ai-teaching/ai-live",
-          name: "aiLive",
-          component: () => import("../views/ai-teaching/ai-live/Index.vue"),
-          meta: {
-            title: 'AI直播',
-            icon: VideoPlay
           }
         }
       ]
@@ -383,21 +383,21 @@ const router = createRouter({
           }
         },
         {
-          path: "/smart-exam/exam-monitoring",
-          name: "examMonitoring",
-          component: () => import("../views/smart-exam/exam-monitoring/Index.vue"),
-          meta: {
-            title: '智能监考',
-            icon: View
-          }
-        },
-        {
           path: "/smart-exam/exam-marking",
           name: "examMarking",
           component: () => import("../views/smart-exam/exam-marking/Index.vue"),
           meta: {
             title: '智慧阅卷',
             icon: DocumentChecked
+          }
+        },
+        {
+          path: "/smart-exam/exam-monitoring",
+          name: "examMonitoring",
+          component: () => import("../views/smart-exam/exam-monitoring/Index.vue"),
+          meta: {
+            title: '智能监考',
+            icon: View
           }
         },
         {

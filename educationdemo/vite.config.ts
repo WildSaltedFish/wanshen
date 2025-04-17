@@ -27,8 +27,13 @@ export default defineConfig({
         target: "http://127.0.0.1:5001", // 目标接口的域名
         changeOrigin: true, // 是否改变源地址
         rewrite: (path) => path.replace(/^\/api/, ""), // 路径重写
-        
+
       },
     },
   },
+  build: {
+    rollupOptions: {
+      external: ['ollama', '__vite-browser-external']
+    }
+  }
 });

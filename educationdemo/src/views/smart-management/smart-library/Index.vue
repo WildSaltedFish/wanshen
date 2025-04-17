@@ -126,7 +126,7 @@ const stringToColor = (str) => {
   --primary: #4566d1;
   --secondary: rgb(69, 183, 209);
   --glass-bg: rgba(255, 255, 255, 0.9);
-  min-height: 100vh;
+  min-height: 100%;
   background: linear-gradient(150deg, #f0f9ff 0%, #fce8f4 100%);
   padding: 2rem;
 
