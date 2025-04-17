@@ -1,0 +1,20 @@
+/**
+ * @Author: bc-ax 1542650614@qq.com
+ * @Description: 全局三级路由页面样式
+ */
+
+.route-page-container {
+  padding: 20px;
+
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 400px;
+  }
+}
